@@ -1,0 +1,46 @@
+{
+    "resourceType": "DiagnosticReport",
+    "status" : "final",
+    "category" : [{
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "394914008",
+        "display" : "Radiology"
+      },
+      {
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+        "code" : "RAD"
+      }]
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "45036003",
+        "display" : "Ultrasonography of pregnance"
+      }],
+      "text" : "Abdominal Ultrasound"
+    },
+    "subject" : {
+      "reference" : "Patient/آی دی"
+    },
+    "effectiveDateTime" : "1402-08-20T10:00:00+01:00",
+    "issued" : "1402-08-20T10:00:00+01:00",
+    "performer" : [{
+      "reference" : "Practitioner/آی دی پزشک"
+    }],
+    "media" : [{
+      "comment" : "A comment about the image",
+      "link" : {
+        "reference" : "DocumentReference/آی دی سونوگرافی",
+        "display" : "WADO example image"
+      }
+    }],
+    "conclusion" : "سونوگرافی: بند ناف دور گردن نوزاد.",
+    "conclusionCode" : [{
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "188340000",
+        "display" : "کاهش تحرک نوزاد"
+      }]
+    }]
+}

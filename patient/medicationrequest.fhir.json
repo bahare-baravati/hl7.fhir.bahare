@@ -1,0 +1,83 @@
+{
+    "resourceType": "MedicationRequest",
+    "contained" : [{
+      "resourceType" : "Medication",
+      "id" : "ID",
+      "code" : {
+        "coding" : [{
+          "system" : "http://maxa.eRX-IRC.ir",
+          "code" : "0206-8862-02",
+          "display" : "پیپراسیلین/تازوباکتام) تزریق 4.5 گرم"
+        }]
+      }
+    }],
+    "identifier" : [{
+      "use" : "official",
+      "system" : "http://www.iran.ir/portal/prescriptions",
+      "value" : "کد نسخه الکترونیک"
+    }],
+    "status" : "completed",
+    "intent" : "order",
+    "medication" : {
+      "reference" : {
+        "reference" : "کد imed",
+        "display" : "پیپراسیلین/تازوباکتام 4.5 گرم"
+      }
+    },
+    "subject" : {
+      "reference" : "Patient/آی دی بیمار",
+      "display" : "شراره شاهی"
+    },
+    "authoredOn" : "2015-01-15",
+    "requester" : {
+      "reference" : "Practitioner/آی دی پزشک",
+      "display" : "عباس افلاطونیان"
+    },
+    "reason" : [{
+      "concept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "59621000",
+          "display" : "فشار خون بالا"
+        }]
+      }
+    }],
+    "dosageInstruction" : [{
+      "sequence" : 1,
+      "text" : "4.5 گرم در D5W 250 ml. IV هر 6 ساعت. انفوزیون بیش از 30 دقیقه با 8 لیتر در دقیقه ",
+      "timing" : {
+        "repeat" : {
+          "frequency" : 1,
+          "period" : 6,
+          "periodUnit" : "h"
+        }
+      },
+      "route" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "47625008",
+          "display" : "مسیر داخل وریدی (مقدار واجد شرایط)"
+        }]
+      },
+      "doseAndRate" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+            "code" : "ordered",
+            "display" : "Ordered"
+          }]
+        },
+        "doseQuantity" : {
+          "value" : 4.5,
+          "unit" : "g",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "g"
+        },
+        "rateQuantity" : {
+          "value" : 50,
+          "system" : "http://unitsofmeasure.org",
+          "code" : "ml/h"
+        }
+      }]
+    }]
+}

@@ -1,0 +1,41 @@
+{
+    "resourceType": "Patient",
+    "identifier" : [{
+        "use" : "usual",
+        "system" : "iso-1366-1",
+        "value" : "3111111111"
+      }
+    ],
+    "name": [
+        {
+            "use": "official",
+            "family": "شاهی",
+            "given": ["شراره"]
+
+        }
+    ],
+    "gender": "female",
+    "birthDate": "1380-01-20",
+    "telecom": [
+        {
+            "value": "98913",
+            "use": "mobile",
+            "system": "phone"
+        },
+        {
+            "system": "email",
+            "value": "sh.shahi@gmail.com"
+        }
+    ],
+    "address": [
+        {
+            "line": ["آزادی 23"],
+            "city": "تهران",
+            "country": "ایران"
+        }
+    ],
+    "managingOrganization" : {
+        "reference" : "Organization/آی دی بیمار",
+        "display" : "بیمارستان افلاطونیان بم"
+    }
+}

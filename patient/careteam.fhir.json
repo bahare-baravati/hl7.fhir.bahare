@@ -1,0 +1,41 @@
+{
+    "resourceType": "CareTeam",
+    "contained": [
+        {
+            "resourceType": "Practitioner",
+            "identifier": [
+                {
+                    "use": "official",
+                    "system": "https://parvaneh.irimc.org",
+                    "value": "14256"
+
+                }
+            ],
+            "name": [
+                {
+                    "given": ["عباس"],
+                    "family": "افلاطونیان"
+                }
+            ]
+        },
+        {
+            "resourceType": "PractitionerRole",
+            "identifier": [
+                {
+                    "system": "https://maxa.behdasht.gov.ir",
+                    "value": "44"
+                }
+            ],
+            "specialty": [
+                {
+                    "text": "فوق تخصص زنان و نازایی"
+                }
+            
+            ]
+        }
+    ],
+    "period": {
+        "start": "1402-08-20",
+        "end": "1402-08-21"
+        }
+}

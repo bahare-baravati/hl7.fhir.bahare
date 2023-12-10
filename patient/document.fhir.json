@@ -1,0 +1,213 @@
+{
+    "resourceType": "Bundle",
+    "id" : "father",
+    "meta" : {
+      "security" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+        "code" : "N",
+        "display" : "normal"
+      }]
+    },
+    "identifier" : {
+      "system" : "urn:ietf:rfc:3986",
+      "value" : "urn:uuid:0c3151bd-1cbf-4d64-b04d-cd9187a4c6e0"
+    },
+    "type": "document",
+    "timestamp" : "2023-08-20T10:12:21Z",
+    "entry" : [
+        {
+            "fullUrl" : "urn:uuid:patient.aflatoonian",
+            "resource" : {
+                "resourceType": "Organization",
+                "identifier": [
+                    {
+                        "value": "1546-dal56-95874-hjk36",
+                        "system": "https://siam.behdasht.gov.ir/ManageOrganizations/SearchOrganization.aspx",
+                        "use": "official"
+                    }
+                ],
+                "name": "بیمارستان افلاطونیان بم"
+                }
+            },
+            {
+            "fullUrl" : "urn:uuid:patient.aflatoonian",
+            "resource" : {
+                "resourceType": "Patient",
+                "identifier" : [
+                    {
+                    "use" : "usual",
+                    "system" : "iso-1366-1",
+                    "value" : "3111111111"
+                    }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "شاهی",
+                        "given": ["شراره"]
+            
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1990-01-20",
+                "telecom": [
+                    {
+                        "value": "98913",
+                        "use": "mobile",
+                        "system": "phone"
+                    },
+                    {
+                        "system": "email",
+                        "value": "sh.shahi@gmail.com"
+                    }
+                ],
+                "address": [
+                    {
+                        "line": ["آزادی 23"],
+                        "city": "تهران",
+                        "country": "ایران"
+                    }
+                ]
+                }
+            },
+            {
+            "fullUrl" : "urn:uuid:patient.aflatoonian",
+            "resource" : {
+                "resourceType": "CareTeam",
+                "contained": [
+                    {
+                        "resourceType": "Practitioner",
+                        "identifier": [
+                            {
+                                "use": "official",
+                                "system": "https://parvaneh.irimc.org",
+                                "value": "14256"
+            
+                            }
+                        ],
+                        "name": [
+                            {
+                                "given": ["عباس"],
+                                "family": "افلاطونیان"
+                            }
+                        ]
+                    },
+                    {
+                        "resourceType": "PractitionerRole",
+                        "identifier": [
+                            {
+                                "system": "https://maxa.behdasht.gov.ir",
+                                "value": "44"
+                            }
+                        ],
+                        "specialty": [
+                            {
+                                "text": "فوق تخصص زنان و نازایی"
+                            }
+                        
+                        ]
+                    }
+                ],
+                "period": {
+                    "start": "2023-08-20",
+                    "end": "2023-08-21"
+                    }
+                }
+            },
+            {  
+            "fullUrl" : "urn:uuid:patient.aflatoonian",
+            "resource" : {          
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://maxa.ir",
+                            "code": "15074-8",
+                            "display": "Glucose [Moles/volume] in Blood"
+                        }
+                    ]
+                },
+                "subject": {
+                    "type": "patient",
+                    "reference": "urn:uuid:patient.aflatoonian",
+                    "display": "شراره شاهی"
+                },
+                "valueQuantity": {
+                    "value": 6.3,
+                    "unit": "mmol/l",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mmol/L"
+                }
+            }
+        },
+
+        {
+            "fullUrl" : "urn:uuid:patient.aflatoonian",
+            "resource" : {
+                "resourceType": "DiagnosticReport",
+                "status" : "final",
+                "category" : [{
+                  "coding" : [{
+                    "system" : "http://snomed.info/sct",
+                    "code" : "394914008",
+                    "display" : "Radiology"
+                  },
+                  {
+                    "system" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+                    "code" : "RAD"
+                  }]
+                }],
+                "code" : {
+                  "coding" : [{
+                    "system" : "http://snomed.info/sct",
+                    "code" : "45036003",
+                    "display" : "Ultrasonography of pregnance"
+                  }],
+                  "text" : "Abdominal Ultrasound"
+                },
+                "subject": {
+                    "type": "patient",
+                    "reference": "urn:uuid:patient.aflatoonian",
+                    "display": "شراره شاهی"
+                },
+                "effectiveDateTime" : "1402-08-20T10:00:00+01:00",
+                "issued" : "2023-08-20T10:00:00+01:00",
+                "performer" : [{
+                  "reference" : "Practitioner/آی دی پزشک"
+                }],
+                "media" : [{
+                  "comment" : "A comment about the image",
+                  "link" : {
+                    "reference" : "DocumentReference/آی دی سونوگرافی",
+                    "display" : "WADO example image"
+                  }
+                }],
+                "conclusion" : "سونوگرافی: بند ناف دور گردن نوزاد.",
+                "conclusionCode" : [{
+                  "coding" : [{
+                    "system" : "http://snomed.info/sct",
+                    "code" : "188340000",
+                    "display" : "کاهش تحرک نوزاد"
+                  }]
+                }]
+            }
+        }
+    ],
+            "signature" : {
+                "type" : [{
+                "system" : "urn:iso-astm:E1762-95:2013",
+                "code" : "1.2.840.10065.1.12.1.1",
+                "display" : "Author's Signature"
+                }],
+                "when" : "2023-08-21T07:42:33+10:00",
+                "who" : {
+                "reference" : "Device/software"
+                },
+                "onBehalfOf" : {
+                "reference" : "Organization/آی دی بیمارستان"
+                },
+                "sigFormat" : "image/jpg",
+                "data" : "/9j/4AAQSkZJRgABAQAAAQABAAD/"
+        }
+}

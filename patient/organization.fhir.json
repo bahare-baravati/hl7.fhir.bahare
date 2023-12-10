@@ -1,0 +1,11 @@
+{
+    "resourceType": "Organization",
+    "identifier": [
+        {
+            "value": "1546-dal56-95874-hjk36",
+            "system": "https://siam.behdasht.gov.ir/ManageOrganizations/SearchOrganization.aspx",
+            "use": "official"
+        }
+    ],
+    "name": "بیمارستان افلاطونیان بم"
+}

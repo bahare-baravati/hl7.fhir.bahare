@@ -1,0 +1,78 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:patient",
+            "resource": {
+                "resourceType": "Patient",
+                "identifier" : [{
+                    "use" : "usual",
+                    "system" : "iso-1366-1",
+                    "value" : "3111111111"
+                  }
+                ],
+                "name": [
+                    {
+                        "use": "official",
+                        "family": "شاهی",
+                        "given": ["شراره"]
+            
+                    }
+                ],
+                "gender": "female",
+                "birthDate": "1380-01-20",
+                "telecom": [
+                    {
+                        "value": "98913",
+                        "use": "mobile",
+                        "system": "phone"
+                    },
+                    {
+                        "system": "email",
+                        "value": "sh.shahi@gmail.com"
+                    }
+                ],
+                "address": [
+                    {
+                        "line": ["آزادی 23"],
+                        "city": "تهران",
+                        "country": "ایران"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "Patient"
+            }
+        },
+        {
+            "resource" :{
+                "resourceType": "Observation",
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://maxa.ir",
+                            "code": "15074-8",
+                            "display": "Glucose [Moles/volume] in Blood"
+                        }
+                    ]
+                },
+                "valueQuantity": {
+                    "value": 6.3,
+                    "unit": "mmol/l",
+                    "system": "http://unitsofmeasure.org",
+                    "code": "mmol/L"
+                },
+                "subject": {
+                    "type": "patient",
+                    "reference": "urn:uuid:patient"
+                }
+            },
+            "request": {
+                "method": "POST"
+            }
+        }
+    ]
+}
